@@ -176,3 +176,37 @@ through over-diversification, brand dilution, or poor capital allocation.
 - **Acknowledge mistakes quickly.** "At least we rub our own noses in our mistakes in blowing
   opportunities. Since those don't hit financial reports, most people don't bother thinking
   about them." (Munger, 2004 meeting)
+
+## On Quality, Potential, and the Long Game (Greenlea Lane Frameworks)
+
+- **Quality (capital Q) is the soul of a business.** Beyond financials and KPIs, Quality is the
+  intangible force that makes a business truly exceptional. Indicators: wow customer experiences,
+  mission to solve an important problem, domain mastery, first-principles thinking, founder
+  mentality, overcapitalized balance sheet. Quality is the deepest layer — and the most durable
+  source of compounding.
+- **Quality layers reveal what's really driving the business.** From surface to depth:
+  financials → KPIs → tactics → strategy → mission → culture → Quality. The deeper you go,
+  the more leverage and durability you find. Most investors stop at financials; the best
+  investments are made by reading the deeper layers.
+- **Build a self-driving portfolio.** The ideal portfolio has an infinite time horizon and is
+  antifragile — it gets stronger under stress. Less time pressure → better decisions → better
+  outcomes → even less time pressure. This virtuous cycle is the structural advantage of
+  patient capital.
+- **Positive feedback loops are necessary, not nice-to-have.** Durable growth requires self-
+  reinforcing mechanisms: employee-based (talent attracts talent), real-estate-based (location
+  advantages compound), goodwill-based (reputation builds on itself). Without a feedback loop,
+  growth is linear and fragile.
+- **Think in terms of endgame, not next quarter.** Endgame thinking asks: what is the
+  overwhelming logic that makes too much sense not to prevail over 10+ years? Ignore the path,
+  embrace deeper currents. The best investments are grounded in endgame inevitability.
+- **Balance explicit and implicit conviction.** Explicit conviction is analytical/quantitative
+  (spreadsheets, DCFs). Implicit conviction is intuitive/qualitative (management excellence,
+  cultural strength, "something special"). The best investments often err toward implicit
+  conviction — when management and culture are exceptional, the numbers follow.
+- **See potential, not just prediction.** See the sapling as a sequoia. Ground your thesis in
+  present potential — what this business could become given its fundamental advantages — not
+  in quarterly forecasts or short-term projections. Prediction is fragile; potential is durable.
+- **Use the indirect approach.** Complex systems (businesses, portfolios) respond better to
+  indirect cultivation (plant the seed, water it, let it grow) than direct control (pull on
+  the branches). The best managers and investors create conditions for success rather than
+  micromanaging outcomes.

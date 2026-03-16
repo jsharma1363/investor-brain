@@ -157,6 +157,59 @@ The key insight: **no single model is sufficient.** Use models from multiple dis
 | Physics | Critical mass, tipping points, feedback loops | Network effects and scaling |
 | History | Cycles, analogies, human nature | Pattern recognition |
 
+## Greenlea Lane Frameworks
+
+### Quality Layers Model
+Businesses operate on nested layers, from surface to depth:
+1. **Financials** — Revenue, margins, cash flow (what most investors analyze)
+2. **KPIs** — Customer retention, NPS, unit economics (leading indicators)
+3. **Tactics** — Pricing, distribution, product decisions (how they execute)
+4. **Strategy** — Market positioning, competitive response (where they play)
+5. **Mission** — The problem they exist to solve (why they exist)
+6. **Culture** — Values, norms, decision-making DNA (how they operate)
+7. **Quality** — The intangible "soul" — founder mentality, domain mastery, first-principles
+   thinking, wow experiences (the deepest source of durable advantage)
+
+**Application:** Deeper layers have more leverage and durability. A tactical advantage can be
+copied in months; Quality takes decades to build and is nearly impossible to replicate. When
+evaluating a business, ask: at which layer does the competitive advantage live?
+
+### Positive Feedback Loop Analysis
+Durable businesses run on self-reinforcing loops. Three archetypes:
+- **Employee-based:** Talent attracts talent → better products → more revenue → higher comp → more talent
+- **Real-estate / infrastructure-based:** Location/network advantages compound with scale
+- **Goodwill-based:** Reputation builds trust → more business → stronger reputation
+
+**Application:** If you can't identify the feedback loop, the growth may be linear and fragile.
+The best investments have multiple reinforcing loops operating simultaneously.
+
+### Endgame Thinking
+Ask: what is the overwhelming logic that makes too much sense not to prevail over 10+ years?
+Strip away short-term noise, quarterly fluctuations, and path uncertainty. Focus on the deeper
+currents — structural advantages, secular trends, and compounding forces that are likely
+inevitable over a long enough horizon.
+
+### Explicit vs. Implicit Conviction
+- **Explicit:** Quantitative, analytical — DCFs, comps, scenario models. Precise but brittle.
+- **Implicit:** Qualitative, intuitive — management quality, cultural excellence, "something
+  special." Fuzzy but durable.
+
+The best investments often come when implicit conviction is very high even if explicit valuation
+seems stretched. When Quality is genuinely present, the numbers tend to follow. Conversely,
+a cheap stock with no implicit conviction is usually cheap for a reason.
+
+### Potential vs. Prediction
+See the sapling as a sequoia. Ground investment theses in present potential — what the business
+could become given its fundamental advantages — rather than quarterly forecasts. Prediction
+assumes you can model the path; potential recognizes you can't, but the destination is likely.
+
+### The Indirect Approach
+Complex systems (businesses, portfolios, careers) respond better to indirect cultivation than
+direct control. Plant the seed, create the right conditions, and let it grow — don't pull on
+the branches. The best managers and capital allocators set direction and remove obstacles
+rather than micromanaging outcomes. Parallels Buffett's management approach: "We find .400
+hitters and don't tell them how to swing."
+
 ## The Munger Decision Process (Integrated)
 
 1. **Circle check** — Is this within my competence? If not → too hard pile. Stop.
