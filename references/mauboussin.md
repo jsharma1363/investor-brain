@@ -440,27 +440,3 @@ debt-funded buybacks.
 
 Intangible-intensive industries have BOTH higher growth AND higher dispersion.
 Both tails are fatter — they can grow faster AND decline faster.
-
-## Evergreen (@evrgn11112231) Frameworks
-
-### META Check-In Thesis (March 2026)
-Key observations on META at 20x GAAP PE:
-- Revenue growing +30% YoY (engagement -> CPM -> ad-load) at double GOOGL's rate
-  on half the revenue base with a lower multiple
-- WhatsApp and Threads completely unmonetized — optionality not in the price
-- All non-core AI costs in financials with little of the benefit yet
-- 20% RIF likely worth HSD to mid/high-teens % EPS uplift
-- Reality Labs masks underlying profitability while providing platform optionality
-- Building the most 1P inference infra of anyone, all pointed at consumer
-
-### ASML Monopoly Thesis
-Learning curve + scale-driven moats are arguably more important than ASML's
-technological moat. The natural monopoly is structural, not just technological.
-
-### AI ROIC Chain
-If AWS customers don't eventually get a return on compute spending, AWS itself doesn't
-get a return on its capex. The ROIC question cascades down the stack.
-
-### Deep Research Moat
-Forensic due diligence that is completely irreplicable by any other market participant
-creates an information edge that scales with effort and expertise (Wirecard story).

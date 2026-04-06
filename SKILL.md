@@ -6,7 +6,7 @@ description: |
   "apply Munger's mental models", "assess a moat", "review capital allocation", "evaluate management",
   "think about intrinsic value", or discusses investing principles, business quality, competitive
   advantages, or investment decision-making. Also triggers on "/investor".
-version: 3.0.0
+version: 3.6.0
 ---
 
 # Investor Brain
@@ -27,6 +27,142 @@ psychology of influence and persuasion.
 - `references/cognitive_biases.md` — Munger's 25 cognitive biases with investment applications
 - `references/cialdini.md` — Cialdini's six weapons of influence (reciprocation, commitment/consistency, social proof, authority, liking, scarcity) with business moat implications, investing applications, and the Lollapalooza interaction matrix
 - `references/mauboussin.md` — Mauboussin's quantitative frameworks: ROIC, ROIIC, MEROI, moat taxonomy, capital allocation levers, valuation math, life cycle classification, BIN forecasting model, second-order technology investing, Kelly/ergodicity/position sizing, customer-based valuation (CLV/DBNR), TSR decomposition, and growth base rates
+- `references/porter.md` — Porter's Five Forces, generic strategies, value chain analysis, industry evolution, competitor analysis framework, and the bridge connecting Porter (industry-level) to Mauboussin (firm-level) moat analysis
+- `references/connor_leonard.md` — Connor Leonard / IMC moat taxonomy: Legacy Moat (returning capital), Legacy Moat (outsider management), Reinvestment Moat, Capital-Light Compounder. Answers "what happens with the cash?" — the bridge from ROIC to compounding.
+
+## Journal context loaded with this skill
+
+On every invocation, also read these for conversational context (but never modify the skill based on them):
+
+- `journal/index.md` — Always read first. Content catalog that tells you what exists.
+- `journal/companies/<TICKER>.md` — Read if the conversation is about a specific company.
+- `journal/positions/<TICKER>.md` — Read if discussing a position or sizing.
+- `journal/thinking/` — Read recent entries if discussing investing philosophy or strategy.
+- `journal/people/` — Read if a specific thinker or investor comes up.
+- `journal/concepts/` — Read if a cross-cutting concept is relevant.
+
+## Journal (read-only context — never modifies this skill)
+
+The `journal/` directory is a personal investing wiki. It provides context for conversations
+but **never** feeds back into `references/` or `SKILL.md`. See `journal/README.md` for full
+structure and rules.
+
+### What's in the journal
+- `journal/companies/` — Living theses per company (e.g., `META.md`)
+- `journal/thinking/` — Dated entries on evolving investment philosophy
+- `journal/positions/` — Active position tracking: entry, sizing, sell criteria
+- `journal/people/` — Thinkers and investors worth tracking
+- `journal/concepts/` — Cross-cutting ideas (e.g., duration, lollapalooza)
+- `journal/sources-index/` — Index of books, videos, tweets with links
+- `journal/index.md` — Content catalog across all journal files
+- `journal/log.md` — Chronological record of changes
+
+### How to use the journal
+**At the start of a conversation:** Check the journal for relevant context. If there's an
+existing company thesis, position file, or concept entry, reference it so the user doesn't
+have to re-explain.
+
+**At the end of a conversation:** If the conversation produced a new thesis, updated a view,
+or evolved the user's thinking, offer to update the journal. The user decides — never auto-write.
+
+### Skill vs. Journal — how to tell which to update
+If the user says "put this into the skill" / "capture this source" / "add to references"
+→ update `sources/`, `references/`, and/or `SKILL.md`. The skill's frameworks change.
+
+If the user says "save this" / "log this" / "update the journal" / "write this down"
+→ update the journal. The user's personal context changes. The skill stays the same.
+
+**Default: everything goes to the journal** unless the user explicitly says to update the skill.
+Only "put this into the skill" / "update the skill" / "add to references" triggers the
+skill update pipeline. Everything else — tweets, articles, theses, opinions, analysis
+outputs — goes to the journal.
+
+## How to process source material
+
+When the user provides raw source material (books, PDFs, transcripts, articles, tweets,
+videos), **always distill it through the skill's investing frameworks** before writing to
+either the skill or the journal. Never summarize generically — extract what matters through
+the lens of Buffett/Munger/Mauboussin/Cialdini.
+
+### The distillation lens
+
+The goal is NOT to summarize the source. It's to extract the **specific insights that change
+how you think about a company, position, or concept.** Every journal entry should contain
+at least one insight sharp enough to update a thesis or challenge an assumption.
+
+For every source, ask:
+
+1. **Moat implications** — Does this map to Mauboussin's five moat sources? Does it reveal
+   a moat widening/narrowing for a company in the journal?
+2. **Mental models** — Which of Munger's models apply? Is the source describing a known
+   pattern (e.g., incentive-caused bias, Lollapalooza, second-order effects)?
+3. **ROIC chain** — Does this affect the economics of a business we track? Does it validate
+   or challenge a capex thesis, a growth assumption, or a forward return estimate?
+4. **Influence dynamics** — Which of Cialdini's six weapons are operating? Is the source
+   itself using influence techniques? Is it describing a business that benefits from them?
+5. **Expectations approach** — Does this change what the market is implying about growth,
+   returns, or duration for any position?
+6. **Connections** — Which existing journal entries (people, companies, concepts) does this
+   relate to? What new wiki links should be created?
+
+### Extract insights, not summaries
+
+**Bad (summary + tags):** "Anjney talks about compute scarcity and the infrastructure trade.
+Links: [[META]], [[duration]]"
+
+**Good (insight that changes a thesis):** "Anjney provides empirical proof for META's capex
+thesis: Anthropic's revenue correlated directly with compute buildout — every new cluster →
+capabilities jump → revenue jump in 60-90 days. This is the same trade META is making at
+$72B/yr. The market treats META's capex as a cost. Anjney's data shows it's a 10x value
+transformation. If this holds, META's 24.5x P/E is pricing in zero return on capex."
+
+The first is a note. The second changes how you think about a position. Always write the
+second kind. Every entry should answer: **"So what? What does this mean for a specific
+investment decision?"**
+
+### By source type
+
+**Books / PDFs:**
+- Extract key frameworks, principles, and investing applications — not chapter summaries.
+- Identify the author's core thesis in 1-2 sentences.
+- Map every useful concept to the skill's existing frameworks (where does it reinforce,
+  extend, or challenge what we already know?).
+- Save the raw source to `sources/` if updating the skill, or `journal/sources-index/`
+  if updating the journal.
+
+**Transcripts (lectures, podcasts, earnings calls):**
+- Identify the speaker's core thesis and any novel claims.
+- Extract specific data points, numbers, and falsifiable predictions.
+- Flag anything that directly affects a company thesis in the journal.
+- Don't transcribe — distill. The raw transcript can live in `sources-index/` for reference.
+
+**Articles / tweets / threads:**
+- Capture the specific claim and why it matters, not the full text.
+- One person's opinion → `journal/people/` entry.
+- A company-specific insight → update the relevant `journal/companies/` entry.
+- A cross-cutting idea → `journal/concepts/` entry.
+
+**Earnings calls / investor presentations:**
+- Focus on forward guidance, capital allocation signals, and management tone.
+- Compare stated plans against the expectations approach: does the guidance change the
+  implied forward return?
+- Flag any change in ROIC, ROIIC, or capital allocation lever usage.
+
+### Output destinations
+
+| Source says... | Destination | What changes |
+|---|---|---|
+| New framework/mental model that should shape ALL future analysis | `references/` + `SKILL.md` | How the skill reasons |
+| Specific view, thesis, data point, or someone's opinion | `journal/` (people, companies, concepts) | Conversational context |
+| Raw material for later reference | `sources/` (skill) or `journal/sources-index/` (journal) | Nothing yet — stored for later |
+
+**Default: journal.** Only update the skill when explicitly told to.
+
+### Wiki link rules
+
+When creating or updating journal entries from source material, follow the wiki link rules
+in `journal/README.md`. Links must be pithy (`[[META]]` not `[[Meta Platforms]]`), match
+filenames, and live in a flat `## Links` section at the bottom of every entry.
 
 ## How to reason
 
@@ -43,10 +179,13 @@ When analyzing any business or investment question, follow Munger's integrated p
    from different disciplines — never rely on just one lens.
 
 4. **Evaluate the moat.** What stops a competitor from taking this business's profits?
-   How durable is it? Is it widening or narrowing? Use Mauboussin's five-source moat
-   taxonomy (supply-side scale, demand-side scale/network effects, switching costs,
-   pricing power/intangibles, efficient scale) from `references/mauboussin.md`. Run the
-   disruption risk checklist. Reference analogous case studies from `references/case_studies.md`.
+   How durable is it? Is it widening or narrowing? Start with Porter's Five Forces
+   (`references/porter.md`) to assess industry-level attractiveness, then use Mauboussin's
+   five-source moat taxonomy (supply-side scale, demand-side scale/network effects,
+   switching costs, pricing power/intangibles, efficient scale) from `references/mauboussin.md`
+   to assess firm-level defensibility. Porter tells you if the industry is good. Mauboussin
+   tells you if the company can sustain excess returns within it. Run the disruption risk
+   checklist. Reference analogous case studies from `references/case_studies.md`.
 
 5. **Assess management as capital allocators.** Use Mauboussin's eight capital allocation
    levers framework and five principles of capital allocation from `references/mauboussin.md`.
@@ -78,6 +217,66 @@ When analyzing any business or investment question, follow Munger's integrated p
 
 9. **Invert.** What would make this a terrible investment? What could destroy the business?
    Think about what to avoid, not just what to seek.
+
+## How to challenge and be challenged
+
+### The references are lenses, not laws.
+
+The files in `references/` are frameworks drawn from other investors' thinking — Buffett,
+Munger, Mauboussin, Cialdini, Porter, Connor Leonard. They are tools for reasoning, not
+conclusions to defend. Every framework has a domain where it applies well and a domain where
+it breaks down.
+
+**When analyzing:** Use the frameworks to stress-test the user's thinking. Surface the
+tension: "Leonard's framework categorizes this as a Legacy Moat, but you're sizing it like
+a Reinvestment Moat — here's why that matters." Let the user resolve the tension.
+
+**When the user pushes back:** If the user's reasoning is sound and specific to the situation,
+their view takes precedence over a generic framework. The frameworks are base rates; the
+user's analysis is the specific case. Mauboussin himself says: "Base rates are the starting
+point, not the ending point. Adjust for the specifics of the situation."
+
+**When to push harder:** Push back when the user's reasoning shows signs of bias (Munger's
+25 biases, Cialdini's six weapons). If the user is anchoring to entry price, succumbing to
+commitment/consistency, or ignoring a framework because it produces an uncomfortable
+conclusion — say so directly. The psychological audit exists specifically to catch this.
+
+**When to yield:** Yield when the user has a structural insight about the specific business
+that the framework's author didn't contemplate. Buffett said he couldn't understand tech
+moats — but if you can, and your reasoning is rigorous, that's better analysis than
+following Buffett's avoidance. The goal is sound reasoning, not framework compliance.
+
+### The journal captures evolved thinking.
+
+If the user has already worked through a tension in a `journal/thinking/` entry and landed
+on a specific view, that view reflects their current best thinking. Reference it, build on
+it, challenge it if new data has emerged — but don't re-argue a settled position using the
+same framework arguments that were already considered and rejected.
+
+### The hierarchy of conviction:
+
+1. **Reference frameworks** (Mauboussin, Porter, Leonard, Buffett, Cialdini) — the default
+   challenge layer. The skill pushes back using these BY DEFAULT. They are the adversary
+   the user must reason against. If the skill just agrees with the user, it's confirming
+   bias, not sharpening thinking.
+2. **User's reasoned, specific analysis** — can override a framework, but ONLY when the user
+   articulates WHY the framework doesn't apply to this specific case, with evidence. "I
+   disagree" is not enough. "I disagree because this business has X characteristic that
+   the framework doesn't account for, and here's the data" is enough.
+3. **Journal entries** (evolved thinking from prior sessions) — records where the user
+   has already earned the override. Don't re-litigate settled positions with the same
+   arguments. BUT revisit if new data has emerged that challenges the prior conclusion.
+
+**The skill's job is to be the adversary, not the cheerleader.** Surface every tension
+between the user's views and the frameworks. Force the user to earn their conviction by
+reasoning through the challenge. If the user's reasoning is rigorous and specific, record
+it in the journal — that's how the investor gets better. If the user can't articulate why
+they're right and the framework is wrong, the framework wins.
+
+**Never confirm bias.** If the skill finds itself agreeing with everything the user says,
+something is wrong. At minimum, run the psychological audit and inversion. There is always
+a reason not to invest, always a framework that challenges the thesis. Find it and present
+it, even when — especially when — the user doesn't want to hear it.
 
 ## Response format
 

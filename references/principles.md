@@ -54,6 +54,32 @@ Five types of durable moat, with specific examples:
 destroyed their information monopoly completely — not partially. A moat dependent on being
 the *only* conduit for information is destroyed entirely when alternatives emerge.
 
+**The castle/duke/moat framework** (MBA talk): "I want a very valuable castle in the middle,
+a Duke who's in charge of that castle to be honest and hardworking and able, and then a big
+moat around the castle." Three things: (1) the business itself must be valuable, (2) management
+must be competent and honest, (3) the competitive advantage must be wide and durable. All three
+are required. A great castle with no moat gets stormed. A wide moat around a worthless castle
+protects nothing.
+
+**Share of mind > share of market.** Kodak had it — "that little yellow box" meant trust for
+the most important photographs of your life. But they let Fuji narrow the moat: the Olympics
+sponsorship loss alone shifted Fuji to perceived parity in people's minds. Coke's moat, by
+contrast, is wider now than 30 years ago because every new country where infrastructure gets
+built widens it a little. "You can't see the moat day by day, but 10 years from now you can
+see the difference." This connects directly to Cialdini: share of mind IS social proof +
+commitment/consistency operating at population scale.
+
+**The one mandate to managers: widen the moat.** "Throw crocodiles and sharks and gators into
+the moat." How? Through service, quality, cost, patents, location — whatever makes the
+competitive position harder to attack. The investor's job is to assess whether management is
+widening or narrowing the moat, not just whether it exists today.
+
+**Simple businesses are easier to assess for moat durability.** "I know what the chewing gum
+business is going to look like 10 years from now. The internet is not going to change how we
+chew gum." If you can't see the moat 10 years out, you can't assess durability. This is
+the circle of competence applied to moat analysis: you need to understand not just the
+business today, but the trajectory of its competitive advantages.
+
 **Moats can widen or narrow by management action.** Widening (adding products, geographies,
 brand extensions done right) is rare and valuable. Most management inadvertently narrows moats
 through over-diversification, brand dilution, or poor capital allocation.

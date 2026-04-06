@@ -1,0 +1,2 @@
+edgartools>=3.0.0
+markdownify>=0.14.1
